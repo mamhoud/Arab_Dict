@@ -1,0 +1,193 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ArDicSenti</title>
+	<!--for-mobile-apps-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Combat Game Responsive Website Template, Web Templates, Flat Web Templates, Android Compatible web template,
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--//for-mobile-apps-->
+
+	<!-- Custom-Theme-Files -->     {% load staticfiles %}
+    <!-- Bootstrap-CSS --> 			<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+    <!-- JQuery --> 				<script src="js/jquery.min.js">			</script>
+    <!-- Bootstrap-Main --> 		<script src="js/bootstrap.min.js">		</script>
+    <!-- Index-Page-Styling --> 	<link rel="stylesheet" href="{% static 'personal/css/style.css' %}" type = "text/css" media="all">
+<!-- Start-Smooth-Scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},2000);
+            });
+        });
+    </script>
+<!-- //End-Smooth-Scrolling -->
+
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+
+
+</head>
+
+<body>
+
+<div class="header">
+
+		<div class="nav">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+						</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" class="active scroll">Home</a></li>
+							<li><a href="#about" class="scroll">ADD</a></li>
+							<li><a href="#requirements" class="scroll">Improve</a></li>
+							<li><a href="#games" class="scroll">Download</a></li>
+						</ul>
+
+					</div><!-- navbar-collapse -->
+				</div><!-- container -->
+			</nav>
+		</div> <!-- Nav Ends -->
+
+		<div class="banner" id="home">
+			<div class="container">
+				<div class="banner-content">
+				<a class="navbar-brand"href="#"><img src="./images/logo2.png" alt="logo"></a>
+
+				</div>
+			</div>
+		</div> <!-- Banner Ends Here -->
+</div> <!-- Header Ends -->
+
+
+<div class="about" id="about">
+	<div class="container">
+
+		<h3> Add New Words here </h3>
+		<form >
+
+			<div class="form-group col-lg-6">
+				<input type="text" class="form-control input-lg" id="text1" placeholder="enter new word">
+			</div>
+
+			<div class="form-group col-lg-3">
+				<div class="radio">
+  					<label><input type="radio" name="optradio">Postive </label>
+				</div>
+				<div class="radio">
+  					<label><input type="radio" name="optradio">Negative  </label>
+				</div>
+			</div>
+
+			<div class="form-group col-lg-6">
+				<button type="button" class="btn btn-primary btn-block">Submit</button>
+			</div>
+
+		</form>
+
+	</div> <!-- Container ends -->
+</div> <!-- Add Ends -->
+
+
+<div class="requirement" id="requirements"> <!-- improve Starts   -->
+	<div class="container">
+		<div class="all-require">
+
+				<div class="heading">
+					<h3>Improve</h3>
+				</div>
+				<form>
+
+					<div class="form-group row" style="width:600px;">
+						<label for="text" style="font-size: 150%;color: #F0F8FF;">What do you think this word is?</label>
+                        <input type="text" class="form-control input-lg" id="text2" readonly>
+					</div>
+
+					<form class="row center-block">
+						<div class="form-group">
+							<div class="radio">
+								<label style="color: #F0F8FF;"><input type="radio" name="optradio">Postive</label>
+							</div>
+							<div class="radio">
+								<label style="color: #F0F8FF;"><input type="radio" name="optradio">Negative</label>
+							</div>
+						</div>
+					</form>
+
+					<div class="form-group row" style="width:600px;">
+						<button type="button" class="btn btn-primary btn-block">Submit</button>
+					</div>
+
+				</form>
+		</div>
+	  </div>
+	</div> <!-- improve Ends -->
+
+
+<div class="upcoming" id="games">
+	<div class="container">
+		<div class="padding-upcoming">
+			<h3>Download</h3>
+		</div>
+
+		<form class="form-horizontal">
+
+			<form class="row">
+				<div class="form-group">
+				<div class="radio-inline">
+  					<label><input type="radio" name="optradio">Postive File</label>
+				</div>
+				<div class="radio-inline">
+  					<label><input type="radio" name="optradio">Negative File</label>
+				</div>
+				<div class="radio-inline">
+  					<label><input type="radio" name="optradio">ALL</label>
+				</div>
+			</div>
+			</form>
+
+			<div class="form-group row center-block" style="width:600px;">
+				<button type="button" class="btn btn-primary btn-block">Download</button>
+			</div>
+
+		</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Download Ends Here -->
+<div class="contact" id="contact">
+  <div class="container">
+		<div class="footer">
+			<p>© 2016 ArDicSenti. All Rights Reserved</p>
+		</div>
+  </div>
+</div>
+
+</body>
+</html>
